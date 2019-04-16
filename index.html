@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<audio src="bitva-so-svetovymi-mechami.mp3" controls></audio>
+<center>
+<div style='background: url("Arena.jpg"); width:950px; height:350px '>
+    <img width="120" src="ui1.png" id="opy">
+<img  width="200px" src="pika1.png" id="apa">
+<img width="100px" src="      ">
+<img width="350px" src="Charizard1.png" id="opo">
+<img width="100" src="pok1.png" id="opa">
+</div>
+    </center>
+</body>
+<script>
+    i=0
+    setInterval(function () {
+        i+=1
+        if (i==4)
+            i=1
+        document.getElementById('apa').src='pika'+i+'.png'
+    }, 100)
+
+    i1=0
+    setInterval(function () {
+        i1+=1
+        if (i1==10)
+            i1=1
+        document.getElementById('opo').src='Charizard'+i1+'.png'
+    }, 100)
+    i2=0
+    setInterval(function () {
+        i2+=1
+        if (i2==3)
+            i2=1
+        document.getElementById('opa').src='pok'+i2+'.png'
+    }, 100)
+    i3=0
+    setInterval(function () {
+        i3+=1
+        if (i3==3)
+            i3=1
+        document.getElementById('opy').src='ui'+i3+'.png'
+    }, 100)
+</script>
+</html>
